@@ -13,7 +13,7 @@
          containers:
            - args:
            - --cert-dir=/tmp
-           - --secure-port=443
+           - --secure-port=4443  //端口修改为4443
            - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
            - --kubelet-use-node-status-port
            - --kubelet-insecure-tls  //增加一条，不验证kubelet提供的https证书
