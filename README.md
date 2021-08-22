@@ -8,7 +8,8 @@
 
 > 修改文件
 
-   spec:
+    
+       spec:
          containers:
            - args:
            - --cert-dir=/tmp
@@ -18,6 +19,7 @@
            - --kubelet-insecure-tls  //增加一条，不验证kubelet提供的https证书
            - --metric-resolution=15s
            image: k8s.gcr.io/metrics-server/metrics-server:v0.5.0
+    
 
 
 > 或是使用一下部署方式
