@@ -131,8 +131,7 @@ spec:
       - args:
         - --cert-dir=/tmp
         - --secure-port=4443
-        - --kubelet-insecure-tls  #不验证kubelet提工的证书
-        - --kubelet-preferred-address-types=InternalIP #使用节点ip连接kubelet
+        - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
         - --kubelet-use-node-status-port
         image: lizhenliang/metrics-server:v0.4.1
         imagePullPolicy: IfNotPresent
